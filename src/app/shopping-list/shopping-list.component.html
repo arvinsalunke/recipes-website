@@ -1,0 +1,8 @@
+<app-shopping-edit></app-shopping-edit>
+<hr>
+<h5>Shopping list</h5>
+<div class="list-group">
+  <a class="list-group-item list-group-item-action" *ngFor="let ingredient of ingredients">
+    {{ ingredient.name }} <span class="float-right">{{ ingredient.amount }}</span>
+  </a>
+</div>
